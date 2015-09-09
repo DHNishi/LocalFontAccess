@@ -11,7 +11,8 @@ var fontListPromise = FontAccess.getFonts();
 fontListPromise.then(function(fontDescriptionArray) {
     // success
     fontDescriptionArray.forEach(function(fontDescription) {
-        console.log("This font is " + fontDescription.family + " with a style of " + fontDescription.style);
+        console.log("This font is " + fontDescription.family +
+                    " with a style of " + fontDescription.style);
     });
 }, function() {
     // failure
