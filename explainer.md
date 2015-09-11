@@ -2,7 +2,7 @@
 
 # What's This All About?
 
-This document looks into how a web developer would use the local font access API, which gives access to the fonts installed locally on a user's device. In a nutshell, fonts are composed of glyphs and the spacing around them. The web platform currently does not allow a developer to gain access to these lower level descriptions of fonts. This functionality elevates the web platform's OS integration, enabling the development of designer web apps.
+This document looks into how a web developer would use a local font access API, which gives access to the fonts installed locally on a user's device. In a nutshell, fonts are composed of glyphs and the spacing around them. The web platform currently does not allow a developer to gain access to these lower level descriptions of fonts. This functionality elevates the web platform's OS integration, enabling the development of web apps for designers.
 
 # To Get the Local Font List
 
@@ -23,7 +23,7 @@ In this example, `FontAccess.getFonts()` returns a promise. When the promise is 
 have a list of fonts installed on the system as a FontDescription. A FontDescription
 contains both the font face (`fontDescription.family`) and the font style (`fontDescription.style`). For example, a FontDescription may consist of
 "Arial" family and "Bold Italic" style and would refer to the Arial font that is both Bold and Italic.
-Designers often do not want programmatic bold and italic versions of a font, but instead want the local font's
+Designers often do not want programmatic bold and italic versions of a font, but instead want a local font's
 specific implementation. Thus, we need to give a list of all font faces and their defined styles.
 
 # To Get a Font Blob
