@@ -21,7 +21,7 @@ fontListPromise.then(function(fontDescriptionArray) {
 
 In this example, `FontAccess.getFonts()` returns a promise. When the promise is fulfilled, it will
 have a list of fonts installed on the system as a FontDescription. A FontDescription
-contains both the font face (`fontDescription.family`) and the font style (`fontDescription.style`). For example, a FontDescription may consist of
+contains both the font face (`fontDescription.family`), the font style (`fontDescription.style`), and, optionally, the PostScript name (`fontDescription.psName`). For example, a FontDescription may consist of
 "Arial" family and "Bold Italic" style and would refer to the Arial font that is both Bold and Italic.
 Designers often do not want programmatic bold and italic versions of a font, but instead want a local font's
 specific implementation. Thus, we need to give a list of all font faces and their defined styles.
